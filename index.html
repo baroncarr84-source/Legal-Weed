@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Legal Weed? Depends on Where You Live | Baron Carr</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Where legal cannabis is available depends on your county. A map shows wide gaps in access across New York." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <div class="site-brand">Baron Carr Reports</div>
+    </div>
+  </header>
+
+  <main class="page">
+    <article class="article">
+      <p class="kicker">Data story</p>
+
+      <h1 class="headline">Legal Weed? Depends on Where You Live</h1>
+
+      <!-- SUBHEAD -->
+      <p class="deck">Where legal cannabis is available depends on your county.</p>
+
+      <div class="meta">
+        <p class="byline">By <span class="byline-name">Baron Carr</span></p>
+        <p class="dateline">December 2025</p>
+      </div>
+
+      <!-- MAIN PHOTO -->
+      <figure class="top-photo">
+        <img
+          src="images/carr.baron_cannabis.jpg"
+          alt="A display inside a legal cannabis shop showing pre-rolls and other products."
+        />
+        <figcaption>
+          <span class="caption-text">
+            Products on display inside a licensed adult-use cannabis dispensary.
+          </span>
+          <span class="caption-credit">
+            Photo: Baron Carr
+          </span>
+        </figcaption>
+      </figure>
+
+      <div class="article-body">
+        <p>
+          Walk down almost any commercial strip, and you’ll likely see a dispensary sign or catch the smell of marijuana. But many of those storefronts are not licensed. Depending on where you live, finding licensed cannabis shops can still be a challenge.
+        </p>
+
+        <p>
+          New York’s adult-use cannabis market is no longer new.
+        </p>
+
+        <p>
+          The map shows wide gaps in access. Some counties have multiple legal options nearby. Others have none. Erie County ranks among the highest in per-capita access, while places like Putnam County have no licensed adult-use dispensaries established.
+        </p>
+
+        <p class="example">
+          “If you Google a dispensary or Weedmaps, that’s the standard for locating dispensaries,” said Ted Crawford, owner of By Any Other Name Dispensary in Clinton Hill, Brooklyn.
+        </p>
+
+        <p>
+          He also noted that illegal dispensaries are common in neighborhoods, and there are shops that get shut down and then re-opened through a loophole or under a different name. This causes a problem for legally licensed establishments.
+        </p>
+
+<!-- MAP EMBED  -->
+<figure class="viz">
+  <div class="viz-frame">
+    <iframe
+      title="Where Legal Cannabis Is — and Isn’t — in New York"
+      aria-label="Choropleth map"
+      id="datawrapper-chart-cNVzx"
+      src="https://datawrapper.dwcdn.net/cNVzx/1/"
+      data-external="1"></iframe>
+  </div>
+</figure>
+
+<script>
+  window.addEventListener("message", function (a) {
+    if (a.data["datawrapper-height"]) {
+      var iframes = document.querySelectorAll("iframe");
+      for (var key in a.data["datawrapper-height"]) {
+        for (var i = 0; i < iframes.length; i++) {
+          var iframe = iframes[i];
+          if (iframe.contentWindow === a.source) {
+            iframe.style.height = a.data["datawrapper-height"][key] + "px";
+          }
+        }
+      }
+    }
+  });
+</script>
+
+
+<p class="pull-quote">
+  “We can’t write off payroll or rent. That’s a killer.”
+</p>
+
+<p>
+  “We can’t write off payroll or rent,” Crawford said. “That’s a killer.”
+</p>
+
+<p>
+  The Trump administration is weighing in on changes. Federal changes could reclassify marijuana to a less restrictive federal schedule and ease research and medical access.
+</p>
+
+        <p>
+          For now, where you live still determines access to legal weed.
+        </p>
+
+        <h2>Sources</h2>
+        <p class="sources">
+          • New York State Office of Cannabis Management,
+          <a href="https://data.ny.gov/Economic-Development/Current-OCM-Licenses/jskf-tt3q/about_data" target="_blank" rel="noopener">
+            Current OCM Licenses dataset
+          </a><br>
+
+          • U.S. Census Bureau,
+          <a href="https://data.census.gov/table?q=S0101:+Age+and+Sex&g=040XX00US36$0500000" target="_blank" rel="noopener">
+            ACS Table S0101 (Age and Sex, Adults 18+)
+          </a><br>
+
+          • Interview: Ted Crawford, By Any Other Name Dispensary (Clinton Hill, Brooklyn)
+        </p>
+
+        <h2>Methodology</h2>
+        <p class="sources">
+          Rates were calculated by dividing the number of active adult-use retail dispensaries in each county by the adult population (age 18 and older), then multiplying by 100,000. Counties with no dispensaries are shown as zero, not missing data.
+        </p>
+      </div>
+    </article>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> Baron Carr.</p>
+    </footer>
+  </main>
+
+  <button id="back-to-top" aria-label="Back to top">▲</button>
+
+  <script>
+    // Footer year
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Back to top
+    const btn = document.getElementById("back-to-top");
+    window.addEventListener("scroll", () => {
+      btn.style.display = window.scrollY > 300 ? "block" : "none";
+    });
+    btn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+  </script>
+</body>
+</html>

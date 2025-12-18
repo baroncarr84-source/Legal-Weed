@@ -1,0 +1,301 @@
+/* =========================
+   FINAL (TRIMMED)
+========================= */
+*,
+*::before,
+*::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { font-size: 16px; }
+
+body {
+  background: #f5f5f5;
+  color: #111;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.65;
+}
+
+img { max-width: 100%; height: auto; }
+
+/* =========================
+   HEADER
+========================= */
+.site-header {
+  border-bottom: 1px solid #e0e0e0;
+  background: #f5f5f5;
+}
+
+.site-header-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0.75rem 1.25rem;
+}
+
+.site-brand {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #444;
+}
+
+/* =========================
+   PAGE + ARTICLE 
+========================= */
+.page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.article {
+  max-width: 720px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 2rem 2.5rem;
+  border-radius: 0.6rem;
+  box-shadow: 0 14px 32px rgba(0,0,0,0.06);
+}
+
+/* =========================
+   TITLE AREA
+========================= */
+.kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-size: 0.75rem;
+  color: #777;
+  margin-bottom: 0.4rem;
+}
+
+.headline {
+  font-size: 2.4rem;
+  line-height: 1.15;
+  font-weight: 800;
+  margin-bottom: 0.65rem;
+}
+
+.deck {
+  font-size: 1.05rem;
+  line-height: 1.55;
+  color: #333;
+  margin-bottom: 1.25rem;
+}
+
+.meta { margin-bottom: 0.75rem; }
+
+.byline {
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.byline-name { font-weight: 700; }
+
+.dateline {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+/* =========================
+   MAIN PHOTO
+========================= */
+.top-photo {
+  margin: 1.1rem 0 1.6rem;
+}
+
+.top-photo img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  border-radius: 0.5rem;
+}
+
+.top-photo figcaption {
+  margin-top: 0.45rem;
+  font-size: 0.82rem;
+  color: #555;
+  line-height: 1.4;
+  font-family: Georgia, serif;
+}
+
+.top-photo .caption-credit {
+  display: block;
+  font-size: 0.7rem;
+  color: #777;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-top: 0.15rem;
+}
+
+/* =========================
+   BODY TEXT
+========================= */
+.article-body {
+  font-family: Georgia, serif;
+  font-size: 1.05rem;
+  line-height: 1.85;
+}
+
+.article-body p { margin-bottom: 1.2rem; }
+
+.article-body p.example { margin-bottom: 0.6rem; }
+
+/* Drop cap for first paragraph */
+.article-body p:first-of-type::first-letter {
+  float: left;
+  font-size: 3.4rem;
+  line-height: 0.85;
+  padding-right: 0.35rem;
+  padding-top: 0.15rem;
+}
+
+/* Section heading inside article */
+.article-body h2 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #666;
+  margin: 2.2rem 0 0.8rem;
+}
+
+/* =========================
+   PULL QUOTE
+========================= */
+.pull-quote {
+  font-size: 1.2rem;
+  font-style: italic;
+  text-align: center;
+  margin: 2rem 0;
+  padding: 1rem 1.2rem;
+  border-top: 1px solid #d6e6d6;
+  border-bottom: 1px solid #d6e6d6;
+  color: #1c2b1c;
+}
+
+/* =========================
+   MAP / VIZ
+========================= */
+.viz {
+  margin: 1.2rem 0 2.3rem;
+  padding: 1.25rem 1.25rem 1.5rem;
+  background: #f3f8f3;
+  border-radius: 0.6rem;
+  border-top: 2px solid #cfe3cf;
+}
+
+.viz-frame {
+  border-radius: 0.45rem;
+  overflow: hidden;
+}
+
+.viz-frame iframe {
+  width: 100%;
+  display: block;
+  border: 0;
+}
+
+/* =========================
+   SOURCES + LINKS
+========================= */
+.sources {
+  font-size: 0.92rem;
+  color: #555;
+  line-height: 1.65;
+}
+
+.sources a {
+  color: #1f6b3a;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(31,107,58,0.25);
+}
+
+.sources a:hover {
+  border-bottom-color: rgba(31,107,58,0.85);
+}
+
+/* =========================
+   FOOTER
+========================= */
+.site-footer {
+  max-width: 720px;
+  margin: 2rem auto;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  padding-top: 1rem;
+  font-size: 0.85rem;
+  color: #777;
+}
+
+/* =========================
+   BACK TO TOP BUTTON
+========================= */
+#back-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  padding: 0.45rem 0.65rem;
+  border-radius: 999px;
+  border: 1px solid #cfd8cf;
+  background: #ffffff;
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: none;
+  opacity: 0.9;
+}
+
+#back-to-top:hover { opacity: 1; }
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 600px) {
+  .page { padding: 1.6rem 0.6rem; }
+
+  .article {
+    padding: 1.5rem 1.2rem;
+    border-radius: 0.5rem;
+  }
+
+  .headline { font-size: 1.85rem; }
+
+  .deck {
+    font-size: 1rem;
+    margin-bottom: 1.05rem;
+  }
+
+  .article-body { font-size: 0.98rem; }
+
+  .top-photo img {
+    max-height: 280px;
+    border-radius: 0.45rem;
+  }
+
+  .viz {
+    padding: 1rem 0.9rem 1.2rem;
+    border-radius: 0.45rem;
+  }
+
+  .pull-quote {
+    font-size: 1.05rem;
+    padding: 0.85rem 0.9rem;
+  }
+}
+
+/* Extra-small phones */
+@media (max-width: 380px) {
+  .headline { font-size: 1.65rem; }
+  .article { padding: 1.35rem 1rem; }
+  .top-photo img { max-height: 250px; }
+}
+
+/* =========================
+   ACCESSIBILITY
+========================= */
+@media (prefers-reduced-motion: reduce) {
+  * { scroll-behavior: auto !important; transition: none !important; animation: none !important; }
+}
